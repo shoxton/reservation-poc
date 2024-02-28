@@ -1,11 +1,12 @@
 ## Reservation app POC
 
 ### TODOs
-- [ ] Add reservationable resources
+- [ ] Add reservable resources
     - [ ] Service providers*
     - [ ] Appointment
     - [ ] Room
     - [ ] Table
+- [ ] Prevent reservation time overlap
 - [ ] Add multitenancy
 - [ ] Add auth
 

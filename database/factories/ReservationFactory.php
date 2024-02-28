@@ -17,7 +17,10 @@ class ReservationFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'reservable_type' => 'TestType',
+            'reservable_id' => $this->faker->uuid(),
+            'starts_at' => now()->format('Y-m-d H:i:s'),
+            'ends_at' => now()->addHour()->format('Y-m-d H:i:s'),
         ];
     }
 }

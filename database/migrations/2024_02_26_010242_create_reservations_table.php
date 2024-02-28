@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->uuidMorphs('reservationable');
+            $table->uuidMorphs('reservable');
             $table->timestamp('starts_at');
             $table->timestamp('ends_at');
             $table->timestamps();

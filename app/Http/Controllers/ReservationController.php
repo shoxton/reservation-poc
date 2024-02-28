@@ -29,7 +29,9 @@ class ReservationController extends Controller
      */
     public function store(StoreReservationRequest $request)
     {
-        //
+        Reservation::create($request->validated());
+
+        return response()->json(['message' => 'Reservation created successfully.'], 201);
     }
 
     /**
